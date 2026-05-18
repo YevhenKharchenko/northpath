@@ -1,0 +1,145 @@
+.faq-section {
+  @include media(desktop) {
+  }
+}
+
+.faq-bg-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/faq/faq-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    background-image: url(../img/faq/faq-bg-desk.jpg);
+  }
+}
+
+.faq-container {
+  @include media(desktop) {
+  }
+}
+
+.faq-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.faq-title {
+  text-align: center;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 736px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.faq-list-item {
+  box-shadow: 0 4px 6px 0 rgba(29, 63, 109, 0.15);
+  background: #fefefe;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.faq-top-text-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-btn-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #da6806;
+  text-align: left;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.faq-toggle-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 28px;
+  height: 28px;
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-icon {
+  @include media(desktop) {
+  }
+}
+
+.faq-bottom-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #254a74;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.is-visible {
+  margin-top: 8px;
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(180deg);
+}
+
+.faq-list-item.faq-open {
+}
+
+.faq-list-item.faq-open .faq-btn-text {
+}

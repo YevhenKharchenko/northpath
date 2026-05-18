@@ -1,0 +1,80 @@
+.features-section {
+  @include media(desktop) {
+  }
+}
+
+.features-bg-wrapper {
+  padding-top: 284px;
+  padding-bottom: 60px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/features/features-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    background-image: url(../img/features/features-bg-desk.jpg);
+    background-position: center right;
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-title {
+  @include media(desktop) {
+  }
+}
+
+.features-content-wrapper {
+  max-width: 448px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-list-item {
+  @include media(desktop) {
+  }
+}
+
+.features-item-title {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #da6806;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.features-item-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #254a74;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,95 @@
+.reviews-section {
+  @include media(desktop) {
+  }
+}
+.reviews-bg-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+  }
+}
+
+.reviews-container {
+}
+
+.reviews-title {
+  @include media(desktop) {
+  }
+}
+
+.reviews-swiper-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.reviews-swiper-container.show {
+  visibility: visible;
+}
+
+.reviews-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.reviews-slide {
+  max-width: 300px;
+
+  @include media(desktop) {
+    max-width: 352px;
+  }
+}
+
+.reviews-item-rating {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #da6806;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.reviews-item-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #254a74;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.reviews-item-name {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: right;
+  color: #326db2;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
