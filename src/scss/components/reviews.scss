@@ -48,6 +48,9 @@
 }
 
 .reviews-slide {
+  background: linear-gradient(180deg, #1e2a5e 0%, #3f58c4 100%);
+  border-radius: 16px;
+  padding: 16px;
   max-width: 300px;
 
   @include media(desktop) {
@@ -55,25 +58,12 @@
   }
 }
 
-.reviews-item-rating {
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #da6806;
-  margin-bottom: 8px;
-
-  @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
 .reviews-item-text {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #254a74;
+  color: #e8f1ff;
   margin-bottom: 8px;
 
   @include media(desktop) {
@@ -82,12 +72,12 @@
 }
 
 .reviews-item-name {
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
   text-align: right;
-  color: #326db2;
+  color: #ff9a5c;
 
   @include media(desktop) {
     font-size: 20px;

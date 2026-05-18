@@ -11,8 +11,8 @@
   margin-right: auto;
   background-image: url(../img/faq/faq-bg-mob.jpg);
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-position: bottom center;
+  background-size: auto;
 
   @include media(desktop) {
     padding-top: 80px;
@@ -29,6 +29,9 @@
 
 .faq-content-wrapper {
   @include media(desktop) {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
   }
 }
 
@@ -47,14 +50,13 @@
   @include media(desktop) {
     width: 100%;
     max-width: 736px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 16px;
   }
 }
 
 .faq-list-item {
-  box-shadow: 0 4px 6px 0 rgba(29, 63, 109, 0.15);
-  background: #fefefe;
+  background: linear-gradient(180deg, #1e2a5e 0%, #3f58c4 100%);
+  border-radius: 16px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -79,11 +81,11 @@
 }
 
 .faq-btn-text {
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
-  color: #da6806;
+  color: #ff9a5c;
   text-align: left;
 
   @include media(desktop) {
@@ -110,11 +112,11 @@
 }
 
 .faq-bottom-text {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #254a74;
+  color: #e8f1ff;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;

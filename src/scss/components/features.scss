@@ -4,22 +4,16 @@
 }
 
 .features-bg-wrapper {
-  padding-top: 284px;
+  padding-top: 60px;
   padding-bottom: 60px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/features/features-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
-    background-image: url(../img/features/features-bg-desk.jpg);
-    background-position: center right;
   }
 }
 
@@ -34,9 +28,14 @@
 }
 
 .features-content-wrapper {
-  max-width: 448px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 
   @include media(desktop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -46,6 +45,7 @@
   gap: 24px;
 
   @include media(desktop) {
+    max-width: 448px;
   }
 }
 
@@ -55,11 +55,11 @@
 }
 
 .features-item-title {
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
-  color: #da6806;
+  color: #ff9a5c;
   margin-bottom: 8px;
 
   @include media(desktop) {
@@ -68,13 +68,22 @@
 }
 
 .features-item-text {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #254a74;
+  color: #5ce1e6;
 
   @include media(desktop) {
     font-size: 18px;
+  }
+}
+
+.features-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin: 0;
   }
 }
