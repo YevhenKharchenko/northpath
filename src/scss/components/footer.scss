@@ -1,5 +1,5 @@
 .footer {
-  background: #254a74;
+  background: #0a1428;
 
   @include media(desktop) {
   }
@@ -50,12 +50,12 @@
 }
 
 .footer-link {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #fefefe;
+  color: #5ce1e6;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -68,12 +68,12 @@
 }
 
 .footer-bottom-text {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.5;
   text-align: center;
-  color: #fefefe;
+  color: #5ce1e6;
 
   @include media(desktop) {
     font-size: 12px;
